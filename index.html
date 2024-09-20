@@ -6,7 +6,7 @@
         content="Video Face Restoration">
   <meta name="keywords" content="Autonomous driving, pedestrian crossing intention prediction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>High-quality Text-to-video Models</title>
+  <title> High-quality Text-to-video Models </title>
   <style>
     @keyframes shake {
       0% {transform: translateX(0);}
@@ -136,31 +136,31 @@
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a target="_blank" rel="noopener noreferrer" href="https://icecherylxuli.github.io/">Li Xu</a><sup> 1</sup>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <!-- <a target="_blank" rel="noopener noreferrer" href="https://icecherylxuli.github.io/">Li Xu</a><sup> 1</sup>&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
             <span class="author-block">
-              <a target="_blank" rel="noopener noreferrer" >Shaodi You</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- <a target="_blank" rel="noopener noreferrer" >Shaodi You</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp; -->
             </span>
             <span class="author-block">
-              <a target="_blank" rel="noopener noreferrer" >Gang He </a><sup>† 1</sup>
+              <!-- <a target="_blank" rel="noopener noreferrer" >Gang He </a><sup>† 1</sup> -->
             </span>
             <span class="author-block">
-              <a target="_blank" rel="noopener noreferrer" >Yunsong Li </a><sup>1</sup>
+              <!-- <a target="_blank" rel="noopener noreferrer" >Yunsong Li </a><sup>1</sup> -->
             </span>
           </div>
 
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Xidian University</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- <span class="author-block"><sup>1</sup>Xidian University</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
           </div>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>2</sup>University of Amsterdam</span>
+            <!-- <span class="author-block"><sup>2</sup>University of Amsterdam</span> -->
           </div>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"> <sup>†</sup>Corresponding authors</span>
+            <!-- <span class="author-block"> <sup>†</sup>Corresponding authors</span> -->
             <!-- <span class="author-block"><sup>†</sup>Corresponding author</span> -->
           </div>
           <div class="is-size-5 publication-authors">
-            <span class="author-block", style="color:#346dc2">IEEE Transactions on Intelligent Vehicles </span>
+            <!-- <span class="author-block", style="color:#346dc2">IEEE Transactions on Intelligent Vehicles </span> -->
           </div>
 
           <div class="column has-text-centered">
@@ -222,10 +222,10 @@ bulmaCarousel.attach('#results-carousel', {
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            Pedestrian crossing intention prediction (PCIP) is crucial for pedestrians' safety in autonomous driving. Existing methods do not use the interaction between pedestrians and cars for their prediction. In this paper, we argue that pedestrians' intentions are highly dependent on their interaction with the environment. Specifically, the trajectories of pedestrians and the dynamic of vehicles jointly affect the entire traffic environment in the future. Therefore, in this paper, we propose a novel pedestrian-vehicle information modulation network (PVIM). Particularly, we first propose a pedestrian-vehicle spatial context (PVSC) that effectively models the spatial dynamics between the pedestrian and ego-vehicle. Second, we design a temporal bilinear attention module that removes temporal redundancy and consolidates temporal correlation for more accurate predictions. We have conducted extensive experiments on the PIE pedestrian action prediction benchmark and have achieved state-of-the-art performance. Specifically, the proposed method achieves an accuracy of 0.91, outperforming the previous best by 2%. The code will be on https://github.com/icecherylXuli/PVIM.       
+            Our Vincennes video model is able to understand complex semantics and also create expressive visual content. Currently, this model can already support video generation of up to about 5 seconds, while the definition of the video can be up to 720p, providing users with a smooth and detailed viewing experience.We are actively iterating and optimizing the technology. In the future, our goal is to further improve video coherence and detail so that the model can support video generation up to approximately 8 seconds. This will mean smoother transitions and more vivid and realistic visual effects. At the same time, we are also working to give the model professional-level control over the camera, so that each shot can accurately convey the creator's intent.
           </p>
 
           <p>
@@ -236,7 +236,7 @@ bulmaCarousel.attach('#results-carousel', {
     </div>
     <!--/ Abstract. -->
 
-    <section class="section" align="center">
+    <!-- <section class="section" align="center">
       <div class="container is-widescreen">
         <h2 class="title is-3 no-bottom">Video</h2>
         <div class="video-container" align="center">
@@ -245,8 +245,21 @@ bulmaCarousel.attach('#results-carousel', {
           </video>
         </div>
       </div>
+    </section> -->
+    <section class="section" align="center">
+      <div class="container is-widescreen">
+        <h2 class="title is-3 no-bottom">Videos</h2>
+        <div class="video-container" style="display: flex; justify-content: center;">
+          <video class="video" id="viz_input1" loop muted src="./static/video/arch-0.mp4" controls style="margin-right: 10px; width: 45%;">
+            <canvas height=0 class="videoMerge" id="viz_inputMerge1"></canvas>
+          </video>
+          <video class="video" id="viz_input2" loop muted src="./static/video/a microwave.mp4" controls style="width: 45%;">
+            <canvas height=0 class="videoMerge" id="viz_inputMerge2"></canvas>
+          </video>
+        </div>
+      </div>
     </section>
-
+    
     <!-- Paper video. -->
     <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-full">
